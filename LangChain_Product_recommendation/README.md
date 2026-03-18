@@ -98,14 +98,3 @@ This project intentionally constrains the LLM to:
 - Output **only** a pandas query string for filtering
 - Recommend only items present in the filtered product table
 
-## Roadmap / possible improvements
-
-- Add stricter parsing/validation for generated pandas queries (avoid `eval`)
-- Convert to a small Streamlit/Gradio app
-- Add unit tests for routing, filtering, and recommendation formatting
-- Add richer metadata filtering (brand, specs, etc.) with a larger catalog
-
-## License
-
-Choose a license (MIT is common for learning projects). Add a `LICENSE` file if you plan to open source it.
-
