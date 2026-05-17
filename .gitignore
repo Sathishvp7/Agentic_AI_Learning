@@ -1,3 +1,18 @@
-# Ignore private interview notes
-INTERVIEW_NOTES.md
-Rough
+# Private / draft notes (anywhere in repo)
+**/INTERVIEW_NOTES.md
+Rough/
+
+# Jupyter
+.ipynb_checkpoints/
+Untitled.ipynb
+
+# Local env & caches
+.env
+.env.*
+__pycache__/
+*.pyc
+.DS_Store
+
+# Runtime DBs / large artifacts
+**/memory.db
+**/.ipynb_checkpoints/
