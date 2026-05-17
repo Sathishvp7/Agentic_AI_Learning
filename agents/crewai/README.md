@@ -1,5 +1,8 @@
 # CrewAI projects
 
-Placeholder for [CrewAI](https://www.crewai.com/) multi-agent crews (roles, tasks, tools).
+Role-based multi-agent crews with [CrewAI](https://www.crewai.com/).
 
-Add new projects as subfolders, e.g. `agents/crewai/market-research-crew/`.
+| Project | Description |
+|---------|-------------|
+| [automated-code-debugging-assistant](automated-code-debugging-assistant/) | Code analysis & correction with `CodeInterpreterTool` |
+| [ai-mock-interviewer](ai-mock-interviewer/) | Mock tech interview (CLI + Streamlit), speech I/O |

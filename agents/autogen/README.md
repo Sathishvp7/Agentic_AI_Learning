@@ -1,5 +1,7 @@
 # AutoGen projects
 
-Placeholder for [Microsoft AutoGen](https://github.com/microsoft/autogen) experiments (multi-agent workflows, code execution, human-in-the-loop).
+Multi-agent workflows with [Microsoft AutoGen](https://github.com/microsoft/autogen).
 
-Add new projects as subfolders, e.g. `agents/autogen/my-first-crew/`.
+| Project | Description |
+|---------|-------------|
+| [smart-health-assistant](smart-health-assistant/) | Sequential agents: BMI → meal plan → workout schedule |

@@ -1,5 +1,8 @@
 # Small Language Models (SLMs)
 
-Placeholder for SLM work: fine-tuning, quantization, on-device inference, and evaluation (e.g. Phi, Gemma, Qwen, Llama small variants).
+Fine-tuning and supervised training on smaller models (BERT, TinyLlama, etc.).
 
-Add new projects as subfolders, e.g. `slms/phi3-finetune-rag/`.
+| Project | Description |
+|---------|-------------|
+| [bert-classification-full-finetune](bert-classification-full-finetune/) | Full fine-tuning BERT for text classification |
+| [tinyllama-1b-text2sql-sft](tinyllama-1b-text2sql-sft/) | SFT TinyLlama 1B for Text2SQL |

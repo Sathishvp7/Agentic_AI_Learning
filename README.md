@@ -1,43 +1,52 @@
 # Personal Projects — AI / NLP Learning Lab
 
-A structured collection of hands-on projects across **NLP**, **agent frameworks**, and **small language models (SLMs)**.
+Hands-on projects across **NLP**, **agent frameworks** (LangChain, LangGraph, AutoGen, CrewAI), and **small language models (SLMs)**.
 
 ## Repository layout
 
 ```
 Personal_projects/
-├── nlp/                          # Classical / retrieval NLP (non-agent)
-│   └── search-engine-biencoder-crossencoder/
-│
-├── agents/                       # Agentic AI frameworks
-│   ├── langchain/                # Chains, runnables, memory, tools
-│   ├── langgraph/                # Graph-based agents (ReAct, state machines)
-│   ├── autogen/                  # Microsoft AutoGen (upcoming)
-│   └── crewai/                   # CrewAI multi-agent (upcoming)
-│
-└── slms/                         # Small language models (upcoming)
+├── nlp/
+├── agents/
+│   ├── langchain/
+│   ├── langgraph/
+│   ├── autogen/
+│   └── crewai/
+└── slms/
 ```
 
 ## Projects index
 
-| Path | Topic |
-|------|--------|
-| `nlp/search-engine-biencoder-crossencoder/` | Bi-encoder + cross-encoder search |
-| `agents/langchain/product-recommendation/` | Multi-user product recommender (SQL memory) |
-| `agents/langchain/travel-assistant/` | Travel AI agent |
-| `agents/langgraph/text2sql-react/` | Text-to-SQL ReAct agent |
-| `agents/langgraph/financial-stock-openbb/` | US stock analyst (OpenBB + ReAct) |
-| `agents/langgraph/reflection-pattern/` | LangChain vs LangGraph reflection pattern |
-
-## Adding a new project
-
-1. Pick the right top-level folder (`nlp/`, `agents/<framework>/`, or `slms/`).
-2. Create a **kebab-case** project folder, e.g. `agents/crewai/research-crew/`.
-3. Add a short `README.md` inside the project (goal, stack, how to run).
-4. Keep notebooks + data together in that project folder.
+| Path | Stack | Description |
+|------|--------|-------------|
+| **NLP** | | |
+| `nlp/search-engine-biencoder-crossencoder/` | Bi-encoder, cross-encoder | Semantic search engine |
+| **LangChain** | | |
+| `agents/langchain/product-recommendation/` | LangChain, SQL memory | Multi-user product recommender |
+| `agents/langchain/travel-assistant/` | LangChain | Travel planning agent |
+| **LangGraph** | | |
+| `agents/langgraph/text2sql-react/` | LangGraph, ReAct | Natural language → SQL |
+| `agents/langgraph/financial-stock-openbb/` | LangGraph, OpenBB | US stock analyst agent |
+| `agents/langgraph/reflection-pattern/` | LangGraph | Reflection / critique pattern |
+| `agents/langgraph/healthcare-customer-support-rag/` | LangGraph, RAG, Chroma | Healthcare support router + RAG |
+| **AutoGen** | | |
+| `agents/autogen/smart-health-assistant/` | AutoGen | BMI → diet → workout multi-agent |
+| **CrewAI** | | |
+| `agents/crewai/automated-code-debugging-assistant/` | CrewAI | Code analysis & correction crew |
+| `agents/crewai/ai-mock-interviewer/` | CrewAI, Streamlit | Mock technical interview app |
+| **SLMs** | | |
+| `slms/bert-classification-full-finetune/` | BERT | Full fine-tuning for classification |
+| `slms/tinyllama-1b-text2sql-sft/` | TinyLlama 1B | Supervised fine-tuning for Text2SQL |
 
 ## Conventions
 
-- **Folder names**: lowercase `kebab-case` (e.g. `product-recommendation`).
-- **One project per folder**: notebook(s), data, and project `README.md` live together.
-- **Secrets**: never commit API keys; use environment variables or local `.env` (gitignored).
+- **Folder names**: lowercase `kebab-case`, one project per folder.
+- **Secrets**: use `.env` locally (never commit API keys).
+- **Course PDFs**: stored locally only (gitignored under `Course Handouts/` and `*.pdf`).
+
+## Adding a new project
+
+1. Choose `nlp/`, `agents/<framework>/`, or `slms/`.
+2. Create `agents/crewai/my-new-project/` (example).
+3. Add notebook/code + a short `README.md`.
+4. Update this index table.

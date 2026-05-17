@@ -12,7 +12,11 @@ Untitled.ipynb
 __pycache__/
 *.pyc
 .DS_Store
+Thumbs.db
 
 # Runtime DBs / large artifacts
 **/memory.db
-**/.ipynb_checkpoints/
+
+# Course materials (PDFs/handouts — keep locally, not in repo)
+**/Course Handouts/
+*.pdf
